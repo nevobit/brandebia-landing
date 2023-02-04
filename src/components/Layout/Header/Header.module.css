@@ -1,0 +1,36 @@
+.header{
+    /* background-color: #fff; */
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem;
+    height: 5rem;
+    max-width: 1200px;
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.container > div{
+    display: flex;
+    gap: 4rem;
+}
+.container nav{
+    display: flex;
+    gap: 4rem;
+    font-weight: 500;
+    /* color: #4d4d4d; */
+}
+
+.container nav a{
+    cursor: pointer;
+}
+
+.container button{
+    background-color: var(--clr-primary);
+    color: #f2f6fa;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}

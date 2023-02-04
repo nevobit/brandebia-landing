@@ -28,13 +28,17 @@ const SEO: NextPage<Seo> = ({ description, author, title, meta = [] }: Seo) => {
 
   return (
     <Head>
-      <title>{title} - Mi Empresa</title>
+      <title>{title} - Brandebia</title>
 
       {metadata.map(({ name, content }, i) => (
         <meta key={i} name={name} content={content} />
       ))}
 
       <link rel="icon" href="/favicon.ico" />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+      <link href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap" rel="stylesheet"></link>
     </Head>
   );
 };

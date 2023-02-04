@@ -1,3 +1,5 @@
 :root{
-    --font: console; 
+    --font: 'Ropa Sans', sans-serif;
+    --clr-primary: #7D41E1;
+    color-scheme: light dark;
 }

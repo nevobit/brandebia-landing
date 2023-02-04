@@ -6,6 +6,7 @@
     margin: 0;
 }
 
+
 *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
   all: unset;
   display: revert;
@@ -15,6 +16,7 @@ html{
   font-size: 62.5%;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
+  color-scheme: dark;
 }
 
 html:focus-within {
@@ -26,7 +28,7 @@ body{
   font-family: var(--font);
   text-rendering: optimizeSpeed;
   min-height: 100vh;
-  background-color: #f2f2f2;
+  /* background-color: #fff; */
 }
 
 
