@@ -1,13 +1,9 @@
-.header{
-    /* background-color: #fff; */
-}
-
 .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 4rem;
-    height: 5rem;
+    padding-inline: 2rem;
+    height: 4rem;
     max-width: 1200px;
     width: 90%;
     margin: 1rem auto;
@@ -32,5 +28,73 @@
     background-color: var(--clr-primary);
     color: #f2f6fa;
     padding: 1rem 2rem;
-    border-radius: 1rem;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+}
+
+.header .menu{
+    padding: 0;
+    background-color: transparent;
+    padding: .5rem;
+    color: #333;
+    display: none;
+}
+
+
+.header .menu .line{
+    transition: 
+        y 300ms ease-in 300ms,
+        rotate 300ms ease-in,
+        opacity 0ms 300ms;
+    transform-origin: center;
+}
+
+.header .menu:hover .line{
+    transition: 
+        y 300ms ease-in,
+        rotate 300ms ease-in 300ms,
+        opacity 0ms 300ms;
+}
+
+.header .menu:hover :is(.top, .bottom){
+    y:45;
+}
+
+.header .menu:hover .top{
+    rotate: 45deg;
+}
+
+.header .menu:hover .middle{
+    opacity: 0;
+}
+
+.header .menu:hover .bottom{
+    rotate: -45deg;
+}
+
+
+
+.header .menu[aria-expanded="true"] .top{
+
+}
+
+@media screen and (max-width: 900px){
+    .header button{
+        display: none;
+    }
+
+    .header .menu{
+        display: block;
+        
+    }
+
+    .header {
+        height: 4rem;
+    }
+
+    .header .nav {
+        display: none;
+    }
+
+
 }

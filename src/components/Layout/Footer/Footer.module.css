@@ -1,0 +1,40 @@
+.footer{
+    background-color: #1a1a1a;
+    padding-block: 2rem;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 300;
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: min(90%, 1400px);
+    margin-inline: auto ;
+}
+
+.container > div{
+    display: flex;
+    gap: 2rem;
+}
+
+.container_social{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: min(90%, 1400px);
+    margin-inline: auto ;
+    margin-bottom: 2rem;
+}
+
+.container_social > div{
+    display: flex;
+    gap: 2rem;
+}
+
+.container_social > div i{
+    font-size: 2.2rem;
+}
